@@ -1,13 +1,16 @@
-import React, { Component } from "react";
+import * as React from "react";
 
 type CardProps = {
   //
 };
 
-class Card extends Component<CardProps> {
-  public render() {
-    return <div>Card</div>;
-  }
-}
+const Card: React.FC<any> = () => {
+  return <div>
+  <img/>
+  <p>Name:</p>
+  <p>Surname:</p>
+  <p>Phone Number:</p>
+</div>;;
+};
 
 export default Card;
