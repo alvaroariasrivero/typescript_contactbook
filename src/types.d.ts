@@ -1,6 +1,6 @@
 type Contact = {
     fname: string,
     surname: string,
-    phone: number,
+    phone: number[],
     picture: string
   }; 
