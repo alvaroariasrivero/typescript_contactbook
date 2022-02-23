@@ -1,10 +1,6 @@
-import * as React from "react";
+import {FC} from 'react';
 
-type CardProps = {
-  contact:{fname:string, surname: string, phone: number[], picture:string}
-};
-
-const Card: React.FC<CardProps> = (Props: CardProps) => {
+const Card: FC<CardProps> = (Props: CardProps) => {
   return <div>
   <img src={Props.contact.picture}/>
   <p>Name: {Props.contact.fname}</p>

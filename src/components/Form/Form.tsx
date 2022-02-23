@@ -1,6 +1,6 @@
 //https://randomuser.me/api/
 
-import * as React from "react";
+import {FC, useState, FormEvent} from "react";
 import Card from '../Card';
 
 const initialContacts: Array<Contact> = [
@@ -8,21 +8,21 @@ const initialContacts: Array<Contact> = [
   {  fname: 'Dwayne', surname: 'Meyer', phone: [666444444, 918768987], picture:'https://randomuser.me/api/portraits/men/57.jpg'}
 ];
 
-const Form: React.FC = () => {
+const Form: FC = () => {
 
-  const [contacts, setContacts] = React.useState(initialContacts)
+  const [contacts, setContacts] = useState(initialContacts)
 
   const createContact = (fname: string, surname: string, phone: number[], picture: string) => {
     const newContact = {fname, surname, phone, picture}
     setContacts([...contacts, newContact])
   }
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>): void => {
     event.preventDefault();
-      const fname: string = event.currentTarget.fname.value;
-      const surname: string = event.currentTarget.surname.value;
-      const phone: number[] = [event.currentTarget.homePhone.value, event.currentTarget.mobilePhone.value]
-      const picture: string = event.currentTarget.img.value;
+    const fname: string = event.currentTarget.fname.value;
+    const surname: string = event.currentTarget.surname.value;
+    const phone: number[] = [event.currentTarget.homePhone.value, event.currentTarget.mobilePhone.value]
+    const picture: string = event.currentTarget.img.value;
     createContact(fname, surname, phone, picture)
   }
 
