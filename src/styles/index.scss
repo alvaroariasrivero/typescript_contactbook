@@ -1,0 +1,15 @@
+@import './variables.scss';
+
+*, * ::before, * ::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $roboto-font;
+    color: $color;
+    background-color: $bg;
+    padding-bottom: 2em;
+    min-height: 100vh;
+    position: relative;
+}
