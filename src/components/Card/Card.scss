@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+img{
+    border-radius: 100%;
+}
+
+.contact{
+    background-color: $bg-card;
+    border-radius: 5px;
+    padding: $spacing-lg;
+    box-shadow: 10px 10px 10px #DECCCA;
+    margin: 1rem;
+}

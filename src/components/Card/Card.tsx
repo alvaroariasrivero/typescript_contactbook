@@ -1,8 +1,9 @@
 import {FC} from 'react';
+import './Card.scss';
 
 const Card: FC<CardProps> = (Props: CardProps) => {
-  return <div>
-  <img src={Props.contact.picture}/>
+  return <div className='contact'>
+  <img src={Props.contact.picture} alt={Props.contact.fname}/>
   <p>Name: {Props.contact.fname}</p>
   <p>Surname: {Props.contact.surname}</p>
   <p>Home phone number: {Props.contact.phone[1]}</p>
