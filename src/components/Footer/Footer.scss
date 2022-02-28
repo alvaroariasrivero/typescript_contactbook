@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+footer{
+    background-color: $bg-menu;
+    background: $bg-gradient;
+    color: $title-color;
+    bottom: 0;
+    position:absolute;
+    width: 100%;
+}

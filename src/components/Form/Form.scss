@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+
+h1{
+    background: $bg-gradient;
+    padding: $spacing-md;
+    color: $title-color;
+    font-size: 3rem;
+}
+
+form{
+    margin-top: $spacing-md;
+    display: flex;
+    flex-direction: column;
+}
+
+form > div{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: 0.25rem auto;
+}
+
+form > input[type="submit"]{
+    width: 6.4rem;
+    margin: $spacing-sm auto;
+    color: $title-color;
+    background-color: $bg-menu;
+    background: $bg-gradient;
+    border-radius: 5px;
+    border: none;
+    padding: $spacing-sm 0;
+    cursor: pointer;
+}
+
+input[type="text"], [type="tel"]{
+    width: 50%;
+}
+
+input[type="submit"]:hover{
+    background: radial-gradient(circle, rgba(201,83,255,1) 0%, rgba(161,83,230,1) 100%);
+}
+
+label{
+    padding: 0.063rem;
+    width: 50%;
+    text-align: justify;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1024px){
+
+    form > div {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 426px){
+
+    label{
+        font-size: 0.7rem;
+    }
+
+    form > div {
+        width: 90%;
+    }
+
+    input[type="text"], [type="tel"]{
+        width: 50%;
+    }
+}
