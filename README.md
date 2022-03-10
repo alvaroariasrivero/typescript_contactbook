@@ -1,4 +1,4 @@
-# TypeScript Contact Book
+# TypeScript Contact Book :notebook:
 
 Frontend project to save contacs in a contactbook wit React TypeScript
 
