@@ -10,7 +10,7 @@ Install dependencies and devdependencies
 npm install
 ```
 
-Start project in localhost:300
+Start project in localhost:3000
 
 ```javascript
 npm start
