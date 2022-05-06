@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import '../utils/variables.scss';
 
 *, * ::before, * ::after{
     margin: 0;
@@ -13,3 +13,8 @@ body{
     min-height: 100vh;
     position: relative;
 }
+
+.App {
+    text-align: center;
+}
+  

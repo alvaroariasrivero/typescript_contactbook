@@ -1,5 +1,4 @@
 import {FC} from 'react';
-import './Card.scss';
 
 const Card: FC<CardProps> = (Props: CardProps) => {
   return <div className='contact'>

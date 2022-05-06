@@ -1,11 +1,11 @@
-type Contact = {
+interface Contact {
     fname: string,
     surname: string,
     phone: number[],
     picture: string
   }; 
 
-type CardProps = {
+interface CardProps {
   contact: {
     fname:string, 
     surname: string, 
