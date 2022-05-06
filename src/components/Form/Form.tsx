@@ -22,14 +22,12 @@ const Form: FC = () => {
     event.preventDefault();
     const fname: string = event.currentTarget.fname.value;
     const surname: string = event.currentTarget.surname.value;
-    const phone: number[] = [event.currentTarget.homePhone.value, event.currentTarget.mobilePhone.value]
+    const phone: number[] = [parseInt(event.currentTarget.homePhone.value), parseInt(event.currentTarget.mobilePhone.value)]
     const picture: string = event.currentTarget.img.value;
     createContact(fname, surname, phone, picture)
   }
 
-  const paintContacts = () => {
-    return contacts.map((contact,i)=> <Card contact={contact} key={i}/>)
-  }
+  const paintContacts = () => contacts.map((contact,i)=> <Card contact={contact} key={i}/>)
 
   return <><h1>Contact Book</h1>
           <form onSubmit={handleSubmit}>
