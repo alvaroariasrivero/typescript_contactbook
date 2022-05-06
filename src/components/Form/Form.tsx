@@ -2,7 +2,6 @@
 
 import {FC, useState, FormEvent} from "react";
 import Card from '../Card';
-import './Form.scss';
 
 const initialContacts: Array<Contact> = [
   { fname:'Marie', surname: 'Sørensen', phone: [666555444, 915557867], picture:'https://randomuser.me/api/portraits/women/51.jpg'},
