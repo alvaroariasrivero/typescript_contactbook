@@ -13,7 +13,7 @@ const Form: FC = () => {
   const [contacts, setContacts] = useState(initialContacts)
 
   const createContact = (fname: string, surname: string, phone: number[], picture: string) => {
-    const newContact = {fname, surname, phone, picture}
+    const newContact: Contact = {fname, surname, phone, picture}
     setContacts([...contacts, newContact])
   }
 
